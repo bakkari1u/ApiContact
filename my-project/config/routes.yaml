@@ -1,0 +1,13 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+contact_envoie:
+  path: /api/contact
+  methods: POST
+  controller: App\Controller\ContactController::postContact
+
+contact_recup:
+    path: /api/contacts
+    methods: GET
+    controller: App\Controller\ContactController::getContact
